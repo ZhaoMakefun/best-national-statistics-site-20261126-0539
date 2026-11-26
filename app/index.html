@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AtlasStat — National Statistics Explorer</title>
+<meta name="description" content="Explore national statistics for 24 countries: population, economy, health, education and environment. Sortable rankings, country profiles and side-by-side comparisons.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">▦</span>
+      <span class="brand-text"><strong>AtlasStat</strong><em>National Statistics Explorer</em></span>
+    </a>
+    <nav class="mainnav" aria-label="Main">
+      <a href="#/" data-nav="home">Overview</a>
+      <a href="#/rankings" data-nav="rankings">Rankings</a>
+      <a href="#/compare" data-nav="compare">Compare</a>
+      <a href="#/about" data-nav="about">About the data</a>
+    </nav>
+    <form class="topsearch" id="topsearch" role="search">
+      <label class="visually-hidden" for="q">Search countries</label>
+      <input id="q" type="search" placeholder="Search a country…" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+<main id="app" class="wrap"></main>
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>AtlasStat</strong> — an independent statistics explorer covering 24 countries. Figures are approximate, compiled from public sources (UN World Population Prospects, World Bank, IMF), 2024–2025, for illustration; they are not official releases of any national statistics office.</p>
+    <p class="foot-links"><a href="#/about">Methodology &amp; sources</a> · <a href="#/rankings">Full rankings</a> · <a href="#/compare">Compare countries</a></p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
